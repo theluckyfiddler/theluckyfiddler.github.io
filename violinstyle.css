@@ -1,0 +1,231 @@
+
+main, nav, header, footer, div {display: block;} 
+/*  above defines these as block sections for backward compatability  */
+* {box-sizing: border-box} 
+/* above keeps box size calulations (box sizes include borders) consitent between platforms  */
+body {color: #004411;/*#006633*/
+	background-color:#FFFFFF;
+	font-family: Verdana, Arial, sans-serif; 
+}
+header{background-image: url(pics/bannerOP.jpg); /*url(mypics/finallogo7.jpg)*/
+		background-color: #DDFFCC;
+		background-repeat: no-repeat;
+		margin-left: auto; 
+		/*background-image;*/
+		margin-right: auto;
+		margin-bottom:4px;
+		padding: 2px;
+		border-radius: 15px;
+		width: 99%;
+		height: 210px;
+}
+
+#wrapper { margin-left: auto; 
+			margin-right: auto;
+			margin-top: .6%;
+			padding: 10px;
+			width: 75%;
+			background-color: #DDFFCC;  
+			color: #004411;
+			border-radius: 15px;
+}
+#wrap2 { margin-left: 10px;
+		margin-right: 10px;
+		float:left;
+		margin-top: .5%;
+		width: 140px;
+		padding: 10px;
+		background-color: #DDFFCC;  
+		border-radius: 15px;
+}
+/*		
+#wrap3 { margin-left: 10px;
+		margin-right: 10px;
+		float:right;
+		margin-top: .5%;
+		width: 140px;
+		padding: 10px;
+		background-color: #DDFFCC;  
+		border-radius: 15px;
+		
+} */
+
+#wrap3 { margin-right: .5%; 
+		float:right;
+	    margin-top: .5%;
+		width: 140px;
+		padding: 5px;
+		background-color: #DDFFCC; 
+		border-radius: 15px; 
+		margin-left: 10px;
+		margin-right: 10px; 
+}
+
+img, video {margin: 10px;
+			margin-top: 15px;
+			border-radius: 10px;
+			/*border: 10px;*/
+			box-shadow: 5px 5px 5px #7d6533;
+			 
+}
+
+/*from final.css
+img, video {margin-bottom: 10px;
+			margin-top: 10px; 
+			border-radius: 10px;
+			box-shadow: 5px 5px 5px #4e4e6e;
+	}	 */
+nav {padding-right: 2px;
+	background-color:#DDFFCC;
+	border-radius: 15px;
+	/*width: 19%;*/
+	margin-left:.3%;
+	/*text-align: center;*/
+	/*display: flex;*/
+}  
+nav a {/*border: solid 1px #004411;*/
+	  padding: 2px 1px;
+	  margin-top: 5px;
+	  font-weight: bold;
+}
+a { text-decoration: none;
+	font-weight: bold;
+}
+a:link { color: #5d3513; } /*dark brown #7d6533*/
+a:visited { color: #85482e; } /*light brown#a5884e;*/
+a:hover {  text-decoration: underline;}
+nav ul { list-style-type: none; /* remove bullet points from list */
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-top:5px;
+		padding-bottom:5px;
+}
+/*nav img {margin-left:auto;
+		margin-right:auto;
+}not needed???*/
+ nav li {
+		padding: 5px;
+}
+footer {  border-top: solid 5px #004411; 
+		  text-align: center;
+		  font-size: .8em;
+		  margin-bottom: 2px;
+		  margin-top: 2px;
+ }
+footer p {margin-top: 0px;
+			margin-bottom: 0px;
+			padding-top: 0px;
+			padding-bottom: 0px;
+}
+footer nav {padding: 1px 2px;
+			width: 100%;
+}/*doesn''t work*/
+footer nav a {border-width: 0;
+			padding: 2px 5px;
+ }
+ footer nav ul {padding-bottom: 2px;
+				padding-top: 2px;
+}
+footer nav li {display:inline;}/*make list horizontal instead of vertical*/
+main {	margin-left:auto;
+		margin-right:auto; 
+}
+h1 {/*text-align: right;
+	padding: 0;
+	font-size: 2.5em;
+	margin: 150px 150px 2px 2px;*/
+	text-indent: 100%;  /*hide h1 because it is in the header background image */
+	 white-space: nowrap;  
+	 overflow: hidden; 
+	}		
+h2 {text-align: center;}
+h3 {padding:0;
+	margin:0;
+	padding-top: 5px;
+}		
+.floatright {float: right;
+			margin-left: 20px;
+			
+}
+.floatleft {float: left;
+			margin-right: 20px;
+}
+/*.floatcenter {float: center;}*/
+.clearfloats {clear: both;}
+.clearrightfloats {clear: right;}
+.clearleftfloats {clear: left;}
+@media only screen and (max-width: 1250px) {  /*CSS changes for smaller screens to keep my wrappers from melding */
+#wrapper { 	width: 68%; }
+}
+@media only screen and (max-width: 1000px) {  /*CSS changes for smaller screens to keep my wrappers from melding */
+#wrapper { 	width: 60%; }
+}
+@media only screen and (max-width: 800px) {  /*CSS changes for smaller screens (smart phone) */
+	header {background-image: none;/* get rid or banner logo */
+		box-shadow: none;
+		background-repeat: no-repeat;
+		border: none;
+		border-radius: 0;
+		height: auto;
+	}
+	h1{height: 100%;
+	   font-size:1.5em;
+	   padding-left:0.3em;
+	   text-indent: 0;  /*make h1 visible now */
+	   white-space: normal;  
+	   overflow: visible; 
+	   text-align: center;
+	   margin: 2px 2px 2px 2px;
+	}
+	nav{float:none;
+		padding: 0;
+		width:100%;
+		}
+		
+	nav a {display:block;
+		padding:0.2em;
+		font-size:1.2em;
+		border:1px solid #330000; 
+	}
+	nav ul{margin:0;
+		padding:0;
+	}
+	nav li{display:block;
+		margin:0;
+		padding:0;
+	}
+	img,video {display: none;}
+	main ul{list-style-position: outside;}
+	footer{padding:0}
+	
+	#wrapper { margin-left: 0;
+				margin-right: 0;
+				border-radius: 0;
+				width: 100%;
+	}
+	#wrap2 { margin-right: auto; 
+		margin-left: auto;
+		float:none;
+		margin-top: .5%;
+		width: 100%;
+		padding: 10px;
+		background-color: #DDFFCC;  /* should be #FFFFCC;*/
+		border-radius: 15px;
+	}
+	#wrap3 { margin-right: auto; 
+		margin-left: auto;
+		float:none;
+		margin-top: .5%;
+		width: 100%;
+		padding: 10px;
+		background-color: #DDFFCC;  /*should be #FFFFCC;*/
+		border-radius: 15px; 
+	}
+	figure img {display:block;
+				border-radius: 0;
+				box-shadow: 0 0 #FFFFFF;
+				 
+	}
+	footer nav {display:none;
+	}
+}
