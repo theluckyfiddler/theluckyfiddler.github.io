@@ -169,7 +169,7 @@ h3 {padding:0;
 		height: auto;
 	}
 	h1{height: 100%;
-	   font-size:1.5em;
+	   font-size:2em;
 	   padding-left:0.3em;
 	   text-indent: 0;  /*make h1 visible now */
 	   white-space: normal;  
@@ -184,7 +184,7 @@ h3 {padding:0;
 		
 	nav a {display:block;
 		padding:0.2em;
-		font-size:1.2em;
+		font-size:2em;
 		border:1px solid #330000; 
 	}
 	nav ul{margin:0;
