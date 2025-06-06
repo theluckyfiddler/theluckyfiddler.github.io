@@ -154,11 +154,40 @@ h3 {padding:0;
 .clearfloats {clear: both;}
 .clearrightfloats {clear: right;}
 .clearleftfloats {clear: left;}
-@media only screen and (max-width: 1250px) {  /*CSS changes for smaller screens to keep my wrappers from melding */
-#wrapper { 	width: 68%; }
+@media only screen and (max-width: 1250px) {  
+#wrapper { 	width: 68%; }  /*CSS changes for smaller screens to keep my wrappers from melding */
+	header{background-image: url(pics/bannerNOP.jpg);
+		background-color: #DDFFCC;
+		background-repeat: no-repeat;
+		margin-left: auto; 
+		/*background-image;*/
+		margin-right: auto;
+		margin-bottom:4px;
+		padding: 2px;
+		border-radius: 15px;
+		width: 99%;
+		height: 243px;
+	}
 }
+
 @media only screen and (max-width: 1000px) {  /*CSS changes for smaller screens to keep my wrappers from melding */
 #wrapper { 	width: 60%; }
+	header {background-image: none;/* get rid or banner logo */
+		box-shadow: none;
+		background-repeat: no-repeat;
+		border: none;
+		border-radius: 0;
+		height: auto;
+	}
+	h1{height: 100%;
+	   font-size:3em;
+	   padding-left:0.3em;
+	   text-indent: 0;  /*make h1 visible now */
+	   white-space: normal;  
+	   overflow: visible; 
+	   text-align: center;
+	   margin: 2px 2px 2px 2px;
+	   }
 }
 @media only screen and (max-width: 980px) {  /*CSS changes for smaller screens (smart phone) */
 	header {background-image: none;/* get rid or banner logo */
